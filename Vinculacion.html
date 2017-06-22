@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vinculacion de datos con Vue</title>
+</head>
+<body>
+	VUEJS V-BIND
+	<div id="main">
+			<input type="text" v-model="info">
+			<p v-bind:title="info">Texto de relleno... {{ info }}</p>
+	</div>
+
+	<script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>
+	<script>
+		new Vue({
+			el:'#main',
+			data: {
+				info:''
+			}
+		});
+
+	</script>
+</body>
+</html>
